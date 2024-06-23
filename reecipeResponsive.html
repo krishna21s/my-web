@@ -1,0 +1,166 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Young+Serif&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <title>Frontend Mentor | Recipe page</title>    
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+ <style>
+    h1
+    {
+      font-family: young serif;
+      font-weight: 100;
+    }
+    p{
+      color: rgb(96, 95, 95);
+      font-family: outfit;
+    }
+    .card{
+        margin-bottom: 40px;
+    }
+    .img-card{
+        margin: 0;
+    }
+    .time li::marker{
+        color: #8c278bff;
+    }
+    .time li{
+        padding-top: 13px;
+        font-family: outfit;
+        b{
+            color: #616060ff;
+        }
+    }
+    li{
+        color: #616060ff;
+    }
+    ul li{
+        padding-top: 13px;
+        font-family: outfit;
+    }
+    li::marker{
+        color:#854632ff ;
+    }
+    .instructions{
+        list-style-type: numbered;
+    }
+    td{
+        color: #616060ff;
+        padding-top: 20px;
+    }
+    table
+    {
+      padding: 10px;
+      .quantity
+      {
+        color:hsl(14, 45%, 36%);
+        font-weight: 700;
+      }
+      .forhr
+      {
+        box-shadow:0.001em 1px 0px 0px rgba(128, 128, 128, 0.434); 
+        padding: 15px;
+        font-family: outfit;
+        color:grey;
+        font-weight: 500;
+      }
+      .nohr
+      {
+        box-shadow: none;
+      }
+    }
+ </style> 
+</head>
+  <body>
+    <div class="main w-100">
+        <div class="card w-100 border-0 img-card p-lg-5 p-md-5" style="width: 18rem;">
+            <img src="./assets/images/image-omelette.jpeg" class="card-img-top " alt="...">
+          </div>
+        <div class="container p-4">
+            <div class="card card1 border border-0 " >
+                <div class="card-body p-0">
+                  <h1 class="card-title pt-3 pb-2" style="font-size: 35px;">Simple Omelette Recipe</h1>
+                  <p class="card-text ">An easy and quick dish, perfect for any meal. This classic omelette combines beaten eggs cooked 
+                    to perfection, optionally filled with your choice of cheese, vegetables, or meats.</p>
+                </div>
+              </div>
+              <div class="card card2 border border-0 p-2 d-flex flex-column justify-content-center" style="background-color: #fff5f7ff;">
+                <div class="card-body">
+                  <h5 class="card-title " style="color: #8c278bff;">Preparation time</h5>
+                  <ul class="list time border-0 ">
+                    <li class="list-item"><b>Total: </b>Approximately 10 minutes</li>
+                    <li class="list-item"><b>Preparation:</b> 5 minutes</li>
+                    <li class="list-item"><b>Cooking:</b> 5 minutes</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="card card3 border border-0 d-flex flex-column justify-content-center ">
+                <div class="card-body p-0">
+                  <h1 class="card-title " style="color: #854632ff;">Ingredients</h1>
+                  <ul class="list border-0 ingredients">
+                    <li class="list-item ">2-3 large eggs</li>
+                    <li class="list-item">Salt, to taste</li>
+                    <li class="list-item">Pepper, to taste</li>
+                    <li class="list-item">1 tablespoon of butter or oil</li>
+                    <li class="list-item">Optional fillings: cheese, diced vegetables, cooked meats, herbs</li>
+                  </ul>
+                </div>
+              </div>
+              <hr>
+              <div class="card card4 border border-0 d-flex flex-column justify-content-center ">
+                <div class="card-body p-0">
+                  <h1 class="card-title " style="color: #854632ff;">Instructions</h1>
+                  <ul class="list border-0 instructions">
+                    <li class="list-item "> <b>Beat the eggs: </b>In a bowl, beat the eggs with a pinch of salt and pepper until they are well mixed. 
+                        You can add a tablespoon of water or milk for a fluffier texture.</li>
+                    <li class="list-item"><b>Heat the pan: </b>Place a non-stick frying pan over medium heat and add butter or oil.                    </li>
+                    <li class="list-item"> <b>Cook the omelette: </b>Once the butter is melted and bubbling, pour in the eggs. Tilt the pan to ensure 
+                        the eggs evenly coat the surface.</li>
+                    <li class="list-item"> <b>Add fillings (optional): </b>When the eggs begin to set at the edges but are still slightly runny in the 
+                        middle, sprinkle your chosen fillings over one half of the omelette.</li>
+                    <li class="list-item"> <b>Fold and serve: </b>As the omelette continues to cook, carefully lift one edge and fold it over the 
+                        fillings. Let it cook for another minute, then slide it onto a plate.</li>
+                    <li class="list-item"> <b>Enjoy: </b>Serve hot, with additional salt and pepper if needed.</li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="card card5 border-0 container5" >
+                <h1 class="card-title"  style="color: #854632ff;">
+                  Nutrition
+                </h1>
+                <p>
+                  The table below shows nutritional values per serving without the additional fillings.
+                </p>
+          
+                <table class="">
+                  <tr class="forhr">
+                    <td>Calories</td>
+                    <td  class="quantity">277kcal</td>
+                  </tr>
+                  <tr class="forhr">
+                    <td>Carbs</td>
+                    <td class="quantity">0g</td>
+                  </tr>
+                  <tr class="forhr">
+                    <td>Protein</td>
+                    <td class="quantity">20g</td>
+                  </tr>
+                  <tr class="forhr nohr">
+                    <td >Fat</td>
+                    <td class="quantity">22g</td>
+                  </tr>
+                </table>
+              </div>
+            
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  </body>
+</html>
